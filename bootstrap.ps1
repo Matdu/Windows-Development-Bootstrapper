@@ -20,13 +20,13 @@ $vms = @("virtualbox", "vagrant")
 $tools = @("ConEmu", "dropbox", "autohotkey")
 
 # Installing Packages
-foreach ($core in $cores) { choco install $core}
+foreach ($core in $cores) { choco install $core }
 foreach ($package in $packages) { choco install $package }
 foreach ($git in $gits) { choco install $git }
-foreach ($editor in $editors) { choco install $editor}
-foreach ($browser in $browsers) { choco install $browser}
-foreach ($vm in $vms) { choco install $vm}
-foreach ($tool in $tools) { choco install $tool}
+foreach ($editor in $editors) { choco install $editor }
+foreach ($browser in $browsers) { choco install $browser }
+foreach ($vm in $vms) { choco install $vm }
+foreach ($tool in $tools) { choco install $tool }
 
 # ------------- PSGet Modules -------------
 $modules = ("go", "posh-git", "PSReadline")
