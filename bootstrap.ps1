@@ -9,38 +9,27 @@ iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.p
 # PSGet
 (new-object Net.WebClient).DownloadString("http://psget.net/GetPsGet.ps1") | iex
 
-# NodeJS
-choco install nodejs
 
-# NPM Packages
-npm install -g yo
-npm install -g bower
-npm install -g nodemon
-npm install -g karma-cli
-npm install -g http-server
+# Variables
+$cores = @("nodejs")
+$packages = @("yo", "bower", "nodemon", "karma-cli", "http-server")
+$gits = @("git", "git-credential-winstore")
+$editors = @("SublimeText3", "SublimeText3.PackageControl")
+$browsers = @("Firefox", "GoogleChrome")
+$vms = @("virtualbox", "vagrant")
+$tools = @("ConEmu", "dropbox", autohotkey")
 
-# Git
-choco install git
-choco install git-credential-winstore
-
-# Sublime Text 3
-choco install SublimeText3
-choco install SublimeText3.PackageControl
-
-# Browsers
-choco install Firefox
-choco install GoogleChrome
-
-# VM
-choco install virtualbox
-choco install vagrant 
-
-# Extras
-choco install ConEmu
-choco install dropbox
-choco install autohotkey
+# Installing Packages
+foreach ($core in $cores) { choco install $core}
+foreach ($package in $packages) { choco install $package }
+foreach ($git in $gits) { choco install $git }
+foreach ($editor in $editors) { choco install $editor}
+foreach ($browser in $browsers) { choco install $browser}
+foreach ($vm in $vms) { choco install $vm}
+foreach ($tool in $tools) { choco install $tool}
 
 # ------------- PSGet Modules -------------
+$modules = ("go", "posh-git", "PSReadline")
 
-Install-Module go
-Install-Module posh-git
+#Installing Modules
+foreach ($module in $modules) { Install-Module $module }
