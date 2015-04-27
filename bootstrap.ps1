@@ -17,7 +17,7 @@ $gits = @("git", "git-credential-winstore")
 $editors = @("SublimeText3", "SublimeText3.PackageControl")
 $browsers = @("Firefox", "GoogleChrome")
 $vms = @("virtualbox", "vagrant")
-$tools = @("ConEmu", "dropbox", autohotkey")
+$tools = @("ConEmu", "dropbox", "autohotkey")
 
 # Installing Packages
 foreach ($core in $cores) { choco install $core}
