@@ -12,12 +12,13 @@ iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.p
 
 # Variables
 $cores = @("nodejs")
-$packages = @("yo", "bower", "nodemon", "karma-cli", "http-server")
-$gits = @("git", "git-credential-winstore")
+$packages = @("yo", "bower", "nodemon", "karma-cli", "http-server", "grunt-cli")
+$gits = @("git.install -params '"/GitAndUnixToolsOnPath"'", "git-credential-winstore")
 $editors = @("SublimeText3", "SublimeText3.PackageControl")
 $browsers = @("Firefox", "GoogleChrome")
 $vms = @("virtualbox", "vagrant")
-$tools = @("ConEmu", "dropbox", "autohotkey")
+$tools = @("cmder", "dropbox", "autohotkey")
+$files = @("winrar")
 
 # Installing Packages
 foreach ($core in $cores) { choco install $core }
@@ -27,6 +28,7 @@ foreach ($editor in $editors) { choco install $editor }
 foreach ($browser in $browsers) { choco install $browser }
 foreach ($vm in $vms) { choco install $vm }
 foreach ($tool in $tools) { choco install $tool }
+foreach ($file in $files) { choco install $file }
 
 # ------------- PSGet Modules -------------
 $modules = ("go", "posh-git", "PSReadline")
