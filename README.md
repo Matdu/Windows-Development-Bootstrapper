@@ -3,6 +3,10 @@ Windows-Development-Bootstrapper
 
 An executable to setup my Windows development environment.
 
+# WARNING
+- THIS PROJECT NEEDS AN URGENT UPDATE!!!!!
+- THINGS MAY/MAY NOT WORK PROPERLY!!!!
+
 ## Installation
 
 Clone this project to your machine or simply click [here](https://github.com/Matdu/Windows-Development-Bootstrapper/archive/master.zip) to download it.
