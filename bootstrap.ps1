@@ -30,9 +30,14 @@ foreach ($tool in $tools) { choco install $tool -y }
 foreach ($file in $files) { choco install $file -y }
 foreach ($thing in $usefull) { choco install $thing -y } 
 
-# ------------ Bower Specific --------------
+# ------------ Bower Specific -------------
 
 npm install -g bower
+
+# ------------ Visual Studio --------------
+
+choco install visualstudio2013ultimate -y
+choco install vs2013.4 -y
 
 # ------------- PSGet Modules -------------
 $modules = ("go", "posh-git", "PSReadline")
