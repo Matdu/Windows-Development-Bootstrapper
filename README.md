@@ -3,20 +3,17 @@ Windows-Development-Bootstrapper
 
 An executable to setup my Windows development environment.
 
-# WARNING
-- THIS PROJECT NEEDS AN URGENT UPDATE!!!!!
-- THINGS MAY/MAY NOT WORK PROPERLY!!!!
-
 ## Installation
 
 Clone this project to your machine or simply click [here](https://github.com/Matdu/Windows-Development-Bootstrapper/archive/master.zip) to download it.
 
-Open your **PowerShell as administrator** and copy the following command `Set-ExecutionPolicy Unrestricted`.
+Open your **PowerShell as administrator** and 
 Run: `C:\path\to\project\.\bootstrap.ps1` and you're done.
 
 ### Global Packages
 - [Chocolatey](https://chocolatey.org/)
 - [PSGet](http://psget.net/)
+- [Bower](http://bower.io/#install-bower)
 
 ### Choco Packages:
 The packages from chocolatey included.
@@ -25,10 +22,6 @@ The packages from chocolatey included.
 - [NodeJs](https://chocolatey.org/packages/nodejs)
 
 ### Packages
-- [Yo](https://github.com/yeoman/yo)
-- [Bower](http://bower.io/#install-bower)
-- [Nodemon](https://github.com/remy/nodemon)
-- [Karma-Cli](https://www.npmjs.com/package/karma-cli)
 - [Http-Server](https://www.npmjs.com/package/http-server)
 
 ### Git Related
@@ -38,17 +31,19 @@ The packages from chocolatey included.
 #### Tools
 - [Sublime Text 3](https://chocolatey.org/packages/SublimeText3)
 - [Sublime Text 3 Package Control](https://chocolatey.org/packages/SublimeText3.PackageControl)
-- [AutoHotkey](https://chocolatey.org/packages/autohotkey)
-- [ConEmu](https://chocolatey.org/packages/ConEmu)
+- [Cmder](http://cmder.net/)
 
 #### Browsers
 - [Firefox](https://chocolatey.org/packages/Firefox)
 - [Chrome](https://chocolatey.org/packages/GoogleChrome)
 
-#### Virtual Environment
-- [VirtualBox](http://chocolatey.org/packages/virtualbox)
-- [Vagrant](http://chocolatey.org/packages/vagrant)
+#### Usefull
+- [Spotify](https://www.spotify.com/)
 
+#### Visual Studio 2013 Ultimate
+- [VS 13 Ultimate](https://chocolatey.org/packages/VisualStudio2013Ultimate)
+- [VS 13 Update 4](https://chocolatey.org/packages/VS2013.4)
+ 
 ### PSGet Modules
 The PSGet modules included.
 
