@@ -12,23 +12,27 @@ iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.p
 
 # Variables
 $cores = @("nodejs")
-$packages = @("yo", "bower", "nodemon", "karma-cli", "http-server", "grunt-cli")
+$packages = @("http-server")
 $gits = @("git.install -params '"/GitAndUnixToolsOnPath"'", "git-credential-winstore")
 $editors = @("SublimeText3", "SublimeText3.PackageControl")
 $browsers = @("Firefox", "GoogleChrome")
-$vms = @("virtualbox", "vagrant")
-$tools = @("cmder", "dropbox", "autohotkey")
+$tools = @("cmder", "dropbox")
 $files = @("winrar")
+$usefull = @("spotify")
 
 # Installing Packages
-foreach ($core in $cores) { choco install $core }
-foreach ($package in $packages) { choco install $package }
-foreach ($git in $gits) { choco install $git }
-foreach ($editor in $editors) { choco install $editor }
-foreach ($browser in $browsers) { choco install $browser }
-foreach ($vm in $vms) { choco install $vm }
-foreach ($tool in $tools) { choco install $tool }
-foreach ($file in $files) { choco install $file }
+foreach ($core in $cores) { choco install $core -y }
+foreach ($package in $packages) { choco install $package -y }
+foreach ($git in $gits) { choco install $git -y }
+foreach ($editor in $editors) { choco install $editor -y }
+foreach ($browser in $browsers) { choco install $browser -y }
+foreach ($tool in $tools) { choco install $tool -y }
+foreach ($file in $files) { choco install $file -y }
+foreach ($thing in $usefull) { choco install $thing -y } 
+
+# ------------ Bower Specific --------------
+
+npm install -g bower
 
 # ------------- PSGet Modules -------------
 $modules = ("go", "posh-git", "PSReadline")
