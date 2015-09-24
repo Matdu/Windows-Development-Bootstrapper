@@ -7,7 +7,8 @@ An executable to setup my Windows development environment.
 
 Clone this project to your machine or simply click [here](https://github.com/Matdu/Windows-Development-Bootstrapper/archive/master.zip) to download it.
 
-Open your **PowerShell as administrator** and 
+Open your **PowerShell as administrator** and copy this command **Set-ExecutionPolicy Unrestricted**. 
+
 Run: `C:\path\to\project\.\bootstrap.ps1` and you're done.
 
 ### Global Packages
