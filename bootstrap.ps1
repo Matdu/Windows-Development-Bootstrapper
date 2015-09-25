@@ -13,7 +13,7 @@ iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.p
 # Variables
 $cores = @("nodejs")
 $packages = @("http-server")
-$gits = @("git", "git-credential-winstore")
+$gits = @("git.install", "git-credential-winstore")
 $editors = @("SublimeText3", "SublimeText3.PackageControl")
 $browsers = @("Firefox", "GoogleChrome")
 $tools = @("cmder", "dropbox")
