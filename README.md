@@ -23,7 +23,6 @@ The packages from chocolatey included.
 - [NodeJs](https://chocolatey.org/packages/nodejs)
 
 ### Packages
-- [Http-Server](https://www.npmjs.com/package/http-server)
 
 ### Git Related
 - [Git](https://chocolatey.org/packages/git)
@@ -40,10 +39,6 @@ The packages from chocolatey included.
 
 #### Usefull
 - [Spotify](https://www.spotify.com/)
-
-#### Visual Studio 2013 Ultimate
-- [VS 13 Ultimate](https://chocolatey.org/packages/VisualStudio2013Ultimate)
-- [VS 13 Update 4](https://chocolatey.org/packages/VS2013.4)
  
 ### PSGet Modules
 The PSGet modules included.
