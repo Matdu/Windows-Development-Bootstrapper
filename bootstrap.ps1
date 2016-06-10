@@ -12,7 +12,7 @@ iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.p
 
 # Variables
 $cores = @("nodejs")
-$packages = @("http-server")
+#$packages = @()
 $gits = @("git.install", "git-credential-winstore")
 $editors = @("SublimeText3", "SublimeText3.PackageControl")
 $browsers = @("Firefox", "GoogleChrome")
@@ -22,7 +22,7 @@ $usefull = @("spotify")
 
 # Installing Packages
 foreach ($core in $cores) { choco install $core -y }
-foreach ($package in $packages) { choco install $package -y }
+#foreach ($package in $packages) { choco install $package -y }
 foreach ($git in $gits) { choco install $git -y }
 foreach ($editor in $editors) { choco install $editor -y }
 foreach ($browser in $browsers) { choco install $browser -y }
@@ -36,8 +36,8 @@ npm install -g bower
 
 # ------------ Visual Studio --------------
 
-choco install visualstudio2013ultimate -y
-choco install vs2013.4 -y
+#choco install visualstudio2013ultimate -y
+#choco install vs2013.4 -y
 
 # ------------- PSGet Modules -------------
 $modules = ("go", "posh-git", "PSReadline")
